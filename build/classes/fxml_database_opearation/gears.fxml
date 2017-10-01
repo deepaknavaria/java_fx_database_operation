@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="1258.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml_database_opearation.gearsController">
+    <children>
+        <TableView fx:id="table" prefHeight="637.0" prefWidth="1258.0">
+            <columns>
+                <TableColumn fx:id="id" editable="false" prefWidth="71.0" resizable="false" text="Id" />
+                <TableColumn fx:id="name" editable="false" prefWidth="199.0" resizable="false" text="Name" />
+                <TableColumn fx:id="address" editable="false" prefWidth="453.0" resizable="false" text="Address" />
+                <TableColumn fx:id="city" editable="false" minWidth="0.0" prefWidth="203.0" resizable="false" text="City" />
+                <TableColumn fx:id="state" editable="false" prefWidth="132.0" resizable="false" text="State" />
+                <TableColumn fx:id="zip" editable="false" prefWidth="199.0" resizable="false" text="Zip" />
+            </columns>
+        </TableView>
+        <JFXTextField fx:id="id_txt" layoutX="7.0" layoutY="722.0" prefHeight="42.0" prefWidth="33.0" promptText="ID" />
+        <JFXTextField fx:id="name_txt" layoutX="67.0" layoutY="722.0" prefHeight="42.0" prefWidth="184.0" promptText="Name" />
+        <JFXTextField fx:id="address_txt" layoutX="293.0" layoutY="722.0" prefHeight="42.0" prefWidth="252.0" promptText="Address" />
+        <JFXTextField fx:id="city_txt" layoutX="588.0" layoutY="722.0" prefHeight="42.0" prefWidth="127.0" promptText="City" />
+        <JFXTextField fx:id="state_txt" layoutX="753.0" layoutY="722.0" prefHeight="42.0" prefWidth="79.0" promptText="State" />
+        <JFXTextField fx:id="zip_txt" layoutX="870.0" layoutY="722.0" prefHeight="42.0" prefWidth="99.0" promptText="Zip" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="647.0" prefHeight="42.0" prefWidth="1258.0" text="Database Operation">
+            <font>
+                <Font name="neo-latina" size="34.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="add" layoutX="995.0" layoutY="724.0" onAction="#add_details" prefHeight="42.0" prefWidth="67.0" style="-fx-background-color: #ff5050;" text="Add" textFill="WHITE" />
+        <JFXButton fx:id="delete" layoutX="1081.0" layoutY="724.0" onAction="#delete_details" prefHeight="42.0" prefWidth="67.0" style="-fx-background-color: #0033cc;" text="Delete" textFill="WHITE" />
+        <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" layoutY="689.0" prefHeight="27.0" prefWidth="1258.0" />
+      <JFXButton fx:id="refresh" layoutX="1166.0" layoutY="724.0" onAction="#get_data" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: #19d159;" text="Refresh" textFill="WHITE" />
+    </children>
+</AnchorPane>
